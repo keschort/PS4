@@ -10,7 +10,7 @@
             text-align: center;
         }
     </style>
-    <title>Keyais 7.55 (JbKaro/Gh222/ToolBox1190)</title>
+    <title>Keyais Superlight 7.55 (JbKaro/Gh222/ToolBox1190)</title>
     <body class="bg" onload="go()">
         <script>
             (window.applicationCache.ondownloading = function () {
@@ -20,11 +20,11 @@
                     document.getElementById("ini").innerHTML = '<br><br>Instalando Cache Offline: <font color="#ee596f">' + Math.round((o.loaded / o.total) * 100) + "%</font>";
                 }),
                 (window.applicationCache.oncached = function () {
-                    (document.getElementById("ini").innerHTML = '<br><br>Cache <font color="#ee596f">instalado</font> Listo!!!'),
+                    (document.getElementById("ini").innerHTML = '<br><br>Cache <font color="#ee596f">instalado </font>¡Listo!'),
                         (localStorage.isCached = !0),
                         setTimeout(function () {
                             (document.getElementById("ini").innerHTML = 'Proceso de descarga de cache para utilizar el <font color="#ee596f">host offline</font>.'),
-                                (document.getElementById("ini").innerHTML = '<br><br>Cierra, <font color="#ee596f">deshabilita la RED</font> y re-abre el Navegador.');
+                                (document.getElementById("ini").innerHTML = '<br><br>Cierra, <font color="#ee596f">deshabilita la RED</font> y re-abre el Navegador');
                         }, 1e3);
                 });
         </script>
@@ -69,8 +69,8 @@
         <div style="display: none;" id="mymenu">
             <div style="text-align: left; position: fixed; left: 10px; bottom: 10px; width: 100%; font-size: 20px; color: #fff;">
                 <div>
-                    Aciertos: <font color="#6089f6"><span id="passCounter"></span></font> /  Errores: <font color="#ee596f"><span id="failCounter"></span></font> -  Desempeño:
-                    <font color="#6089f6"><span id="performance"></span>%<br /></font>Versión de Firmware de este PS4: <font color="#6089f6">7.55</font> - <font color="#ee596f"><span id="infoDesb"></span></font><br />
+                    Aciertos: <font color="#6089f6"><span id="passCounter"></span></font> / Errores: <font color="#ee596f"><span id="failCounter"></span></font> - Desempeño:
+                    <font color="#6089f6"><span id="desempenho"></span>%<br /></font>Versión de Firmware de este PS4: <font color="#6089f6">7.55</font> - <font color="#ee596f"><span id="infoDesb"></span></font><br />
                     Gracias: <font color="#6089f6">Sleirsgoevy-SiSTRo-Karo-Leeful-TheFlow-Crono-Tecniqueza-Hacking-Fbin-Macedo y todos los que ayudan a la scene.</font>
                 </div>
             </div>
@@ -82,8 +82,8 @@
                 (window.passCounter.innerHTML = localStorage.passcount),
                 null == localStorage.failcount && (localStorage.failcount = 0),
                 (window.failCounter.innerHTML = localStorage.failcount),
-                null == localStorage.percentage && (localStorage.percentage = "Aun no hay datos"),
-                (window.performance.innerHTML = localStorage.percentage);
+                null == localStorage.desempenho && (localStorage.desempenho = "Aun no hay datos"),
+                (window.desempenho.innerHTML = localStorage.desempenho);
         </script>
     </body>
 </html>

@@ -72853,16 +72853,16 @@ function jailbreak() {
     179 == l || 0 == l
         ? ((localStorage.passcount = ++localStorage.passcount),
           (window.passCounter.innerHTML = localStorage.passcount),
-          (localStorage.percentage = Math.round((parseInt(localStorage.passcount) / (parseInt(localStorage.passcount) + parseInt(localStorage.failcount))) * 100)),
-          (window.performance.innerHTML = localStorage.percentage),
+          (localStorage.desempenho = Math.round((parseInt(localStorage.passcount) / (parseInt(localStorage.passcount) + parseInt(localStorage.failcount))) * 100)),
+          (window.desempenho.innerHTML = localStorage.desempenho),
           (localStorage.infoDesb = "<font style='color:#6089f6'>Explotación de Kernel ¡Realizada!</font>"),
           (window.infoDesb.innerHTML = localStorage.infoDesb),
           load_hen())
         : ((localStorage.failcount = ++localStorage.failcount),
           (window.failCounter.innerHTML = localStorage.failcount),
-          (localStorage.percentage = Math.round((parseInt(localStorage.passcount) / (parseInt(localStorage.passcount) + parseInt(localStorage.failcount))) * 100)),
-          (window.performance.innerHTML = localStorage.percentage),
+          (localStorage.desempenho = Math.round((parseInt(localStorage.passcount) / (parseInt(localStorage.passcount) + parseInt(localStorage.failcount))) * 100)),
+          (window.desempenho.innerHTML = localStorage.desempenho),
           (localStorage.infoDesb = "<font style='color:#ee596f'>Explotación de Kernel ¡Fallida!</font>"),
           (window.infoDesb.innerHTML = localStorage.infoDesb),
-          (window.ini.innerHTML = '<br><br>Explotación de Kernel <font color="#ee596f"> ¡Error! Reinicie...'));
+          (window.ini.innerHTML = '<br><br>Explotación de Kernel <font color="#ee596f">¡Error! Reinicie...'));
 }
