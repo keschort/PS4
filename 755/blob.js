@@ -742,9 +742,9 @@ function load_exploit() {
         document.body.appendChild(e);
 }
 function load_hen() {
-    (ini.innerHTML = '<br><br>Goldhen v2.2.2: <font color="#ee596f">Cargando...</font>'),
-        (LoadedMSG = '<br><br>Goldhen v2.2.2: <font color="#ee596f"><b>¡Listo!</b></font>'),
-        (PLfile = "goldhen_2.2.2_755.bin"),
+    (ini.innerHTML = '<br><br>Goldhen v2.3: <font color="#ee596f">Cargando...</font>'),
+        (LoadedMSG = '<br><br>Goldhen v2.3: <font color="#ee596f"><b>¡Listo!</b></font>'),
+        (PLfile = "goldhen_2.3_755.bin"),
         loadScript2(),
         setTimeout(function () {
             (ini.innerHTML = '<br><br>Orbis Toolbox Alpha v1.0 Build 1190: <font color="#ee596f">Cargando...</font>'),
