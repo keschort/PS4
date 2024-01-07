@@ -12,6 +12,22 @@
     </style>
     <title>Keyais Superlight 7.55 (JbKaro/Gh23/ToolBox1190)</title>
     <body class="bg" onload="go()">
+        <script>
+            (window.applicationCache.ondownloading = function () {
+                localStorage.isCached = !1;
+            }),
+                (window.applicationCache.onprogress = function (o) {
+                    document.getElementById("ini").innerHTML = '<br><br>Instalando Cache Offline: <font color="#ee596f">' + Math.round((o.loaded / o.total) * 100) + "%</font>";
+                }),
+                (window.applicationCache.oncached = function () {
+                    (document.getElementById("ini").innerHTML = '<br><br>Cache <font color="#ee596f">instalado </font>¡Listo!'),
+                        (localStorage.isCached = !0),
+                        setTimeout(function () {
+                            (document.getElementById("ini").innerHTML = 'Proceso de descarga de cache para utilizar el <font color="#ee596f">host offline</font>.'),
+                                (document.getElementById("ini").innerHTML = '<br><br>Cierra, <font color="#ee596f">deshabilita la RED</font> y re-abre el Navegador');
+                        }, 1e3);
+                });
+        </script>
         <div style="font-size: 31px; text-align: center; color: #6089f6;" id="ini">
             <br />
             <br />
